@@ -1,0 +1,59 @@
+.accordion-container {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.accordion-card-container {
+  width: 300px;
+  height: auto;
+  margin-bottom: 16px;
+}
+.accordion-content {
+  display: grid;
+  overflow: hidden;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+.accordion-item {
+  overflow: hidden;
+  font-family: "Titillium Web", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #000000;
+}
+.accordion-button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-color: #ffffff;
+}
+.accordion-title {
+  font-family: "Titillium Web", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 18px;
+  color: #353535;
+}
+.accordion-hide {
+  grid-auto-rows: 0.1fr;
+  opacity: 0;
+}
+.accordion-active {
+  grid-auto-rows: 1fr;
+  opacity: 1;
+  row-gap: 6px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+.accordion-icon {
+  font-family: "Titillium Web", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 18px;
+  color: #353535;
+}

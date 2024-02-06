@@ -1,0 +1,71 @@
+.footer-menu-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 40px;
+  margin-bottom: 65px;
+}
+.footer-menu-content {
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+}
+.footer-menu-title {
+  font-family: "Titillium Web", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 18px;
+  color: #353535;
+}
+.footer-menu-list {
+  list-style-type: none;
+  font-family: "Titillium Web", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  cursor: pointer;
+}
+
+.footer-container {
+  background-color: #353535;
+  padding-top: 27px;
+  padding-bottom: 17px;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+
+  @media (max-width: 767px) {
+    padding-top: 24px;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    padding-bottom: 1px;
+  }
+}
+.social-icons,
+.credit-cards-icons {
+  display: grid;
+  grid-template-columns: 0fr 0fr 0fr 0fr;
+  column-gap: 24px;
+  @media (max-width: 767px) {
+  }
+}
+.footer-logo {
+  display: grid;
+  grid-template-columns: 0fr 0fr;
+  column-gap: 20px;
+  @media (max-width: 767px) {
+    margin-top: 22px;
+    margin-bottom: 22px;
+  }
+}
+.vtex,
+.maeztra {
+  color: #ffffff;
+  font-family: "Open Sans", sans-serif;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 14px;
+  letter-spacing: 0px;
+  text-align: left;
+}

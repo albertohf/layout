@@ -1,0 +1,128 @@
+.banner {
+  display: block;
+  position: relative;
+}
+.banner-image {
+  width: 100%;
+}
+.banner-content-text {
+  position: absolute;
+  top: 20%;
+  left: 20%;
+}
+.banner-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(250, 165, 0);
+  border-radius: 4px;
+  width: 128px;
+  height: 48px;
+
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+  cursor: pointer;
+
+  @media (max-width: 767px) {
+    width: 76px;
+    height: 28px;
+    font-size: 14px;
+  }
+}
+.banner-title {
+  font-size: 40px;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+  color: rgb(255, 255, 255);
+  margin-bottom: 40px;
+  @media (max-width: 767px) {
+    width: 220px;
+    font-size: 30px;
+    margin-bottom: 24px;
+  }
+}
+.banner-description {
+  width: 470px;
+  font-size: 20px;
+  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
+  color: rgb(255, 255, 255);
+  margin-bottom: 40px;
+  @media (max-width: 767px) {
+    width: 230px;
+    font-size: 14px;
+    margin-bottom: 16px;
+  }
+}
+.swiper-pagination-bullet {
+  background-color: transparent !important;
+  border: 2px solid rgb(250, 165, 0);
+}
+.swiper-pagination-bullet-active {
+  background-color: rgb(250, 165, 0) !important;
+}
+.swiper-button-prev {
+  background-image: url("../assets/icons/prev.svg");
+  background-repeat: no-repeat;
+  left: 10% !important;
+}
+
+.swiper-button-next {
+  background-image: url("../assets/icons/next.svg");
+  background-repeat: no-repeat;
+  right: 10% !important;
+}
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  content: "" !important;
+}
+
+/* TEXT-BANNER */
+.banner-text-container {
+  margin-top: 80px;
+  @media (max-width: 767px) {
+    margin-top: 23px;
+    padding-left: 31px;
+  }
+}
+.banner-text-content {
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 64px;
+  margin-bottom: 80px;
+  @media (max-width: 767px) {
+    margin-bottom: 40px;
+    flex-direction: column;
+    gap: 24px;
+    align-items: start;
+  }
+}
+.text-content {
+}
+.banner-text-title {
+  font-family: "Titillium Web", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: rgb(0, 0, 0);
+  margin-bottom: 16px;
+}
+.banner-text-paragraph {
+  font-family: "Titillium Web", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: rgb(0, 0, 0);
+  margin-bottom: 24px;
+  max-width: 420px;
+  @media (max-width: 767px) {
+    max-width: 270px;
+  }
+}
+.banner-text-image {
+  @media (max-width: 767px) {
+    align-self: center;
+  }
+}

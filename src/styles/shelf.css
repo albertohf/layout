@@ -1,0 +1,79 @@
+.product-card-container {
+  padding: 10px;
+  max-width: 308px;
+}
+.product-card-content {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+  margin-left: 27px;
+}
+.product-card-colors {
+  display: flex;
+  gap: 8px;
+  margin-top: 8px;
+}
+.product-card-color {
+  width: 27px;
+  height: 27px;
+  border-radius: 4px;
+}
+.product-card-value {
+  font-family: "Titillium Web", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: rgb(53, 53, 53);
+}
+.product-card-title {
+  font-family: "Titillium Web", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: rgb(53, 53, 53);
+}
+.product-card-description {
+  font-family: "Titillium Web", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  color: rgb(53, 53, 53);
+  max-width: 224px;
+}
+.product-card-button {
+  background-color: rgb(250, 165, 0);
+  width: 254px;
+  height: 35px;
+  border-radius: 4px;
+  font-family: "Titillium Web", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: rgb(255, 255, 255);
+}
+.shelf-slider-container {
+  margin: 0 5%;
+  @media (max-width: 767px) {
+    margin: 0 0px;
+  }
+}
+.myShelfSwiper .swiper-button-prev,
+.myShelfSwiper .swiper-button-next {
+  display: block;
+  @media (max-width: 767px) {
+    display: none;
+  }
+}
+.myShelfSwiper .swiper-button-prev {
+  left: 1px !important;
+}
+.myShelfSwiper .swiper-button-next {
+  right: 1px !important;
+}
+.myShelfSwiper .swiper-slide {
+  width: initial !important;
+}
+.myShelfSwiper .swiper-wrapper,
+.tip-bar-content .swiper-wrapper,
+.tip-brand-card-container .swiper-wrapper {
+  margin-left: 0px;
+  @media (max-width: 767px) {
+    margin-left: -40px;
+  }
+}
